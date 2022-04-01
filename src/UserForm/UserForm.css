@@ -1,0 +1,27 @@
+.user__form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.user__form input {
+  width: 100%;
+  display: block;
+  background-color: #4c2885;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user__form input::placeholder {
+  color: #bbb;
+}
+
+.user__form input:focus {
+  outline: none;
+}
