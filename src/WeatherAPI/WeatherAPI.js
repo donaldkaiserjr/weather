@@ -9,7 +9,7 @@ function WeatherAPI() {
   const [errorMessage, setErrorMessage] = useState(null);
 
   function handleChange(cityName) {
-    fetch(`http://localhost:9000/weather/${cityName}`)
+    fetch(`https://weather-public-api.herokuapp.com/weather/${cityName}`)
       .then((res) => res.json())
       .then((res) => {
         if (res.cod && res.cod === "404") {
@@ -17,7 +17,7 @@ function WeatherAPI() {
           setApiResponse(null);
         } else {
           setApiResponse(res);
-          setErrorMessage(null)
+          setErrorMessage(null);
         }
       });
   }
